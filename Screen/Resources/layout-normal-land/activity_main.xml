@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+      <!--  Land-->
+
+  <LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_weight="2"
+  android:layout_gravity="center"
+    android:paddingLeft="10sp"
+
+  android:background="@color/abc_decor_view_status_guard_light"
+  android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtid"
+        android:text="Radio Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+
+        />
+    <TextView
+    android:text="What's your favorite color ? "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10px"
+
+    android:id="@+id/idt"/>
+
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25px"
+        android:id="@+id/radioGroup1">
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#A52A2A"
+          android:checked="false"
+          android:text="Red"
+          android:id="@+id/radioButton1" />
+      <RadioButton
+                
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Blue"
+          android:textColor="#3498db"
+          android:checked="true"
+          android:id="@+id/radioButton2" />
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Green"
+         android:textColor="#7FFF00"
+
+          android:id="@+id/radioButton3" />
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Other"
+          android:textColor="#FF1493"
+
+          android:id="@+id/radioButton4" />
+    </RadioGroup>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:padding="1sp"
+      android:orientation="vertical">
+
+    <TextView
+        android:text="What's your favorite color ? "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="10sp"
+        android:background="@color/colorbluee1"
+        android:textColor="@color/white"
+        android:id="@+id/textView212"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="5px"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:layout_marginRight="13dp"
+          android:layout_weight="1"
+          android:backgroundTint="@color/colorgreen1"
+            />
+        <Button
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:layout_marginLeft="13dp"
+          android:layout_weight="1"
+          android:backgroundTint="@color/colorred1"
+            />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+                >
+
+        <Button
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:layout_marginRight="13dp"
+          android:backgroundTint="@color/colorjon1"
+            />
+        <Button
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:layout_marginLeft="13dp"
+          android:backgroundTint="@color/colorother1"
+            />
+
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>
