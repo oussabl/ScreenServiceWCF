@@ -26,17 +26,22 @@ namespace Screen
             var buttono = FindViewById<Button>(Resource.Id.idother);
             var buttong = FindViewById<Button>(Resource.Id.idgreen);
             var text = FindViewById<TextView>(Resource.Id.txtid);
+            var etext = FindViewById<EditText>(Resource.Id.etxt1);
           //  TextView textView = FindViewById<EditText>(Resource.Id.txtv1) ;
 
-          //  button.Click += delegate  { text.Text = "Hello from the button Red"; };
+          //  button.Click += delegate  { text.Text = "Hello from the button Red" + etext.Text ; };
             buttony.Click += delegate { text.Text = "Hello from the button Yellow "; };
             buttono.Click += delegate { text.Text = "Hello from the button Other"; };
             buttong.Click += delegate { ToastNotification.TostMessage("Hello From pop"); };
 
-            localhost.Service client = new localhost.Service();
-            String aa = client.GetData("oussama");
+              localhost.Service client = new localhost.Service();
 
-            button.Click += delegate { text.Text = aa; };
+              //String result = "" + etext.Text;
+              String aa = client.GetData("oussama");
+
+
+                button.Click += delegate { text.Text =  aa; };
+            
 
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
